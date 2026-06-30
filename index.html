@@ -32,15 +32,15 @@
   ::selection{background:var(--gold);color:var(--white);}
   .ic{width:1em;height:1em;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0;vertical-align:-0.15em;}
 
-  header{position:sticky;top:0;z-index:50;background:rgba(251,246,238,0.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);}
-  nav{display:flex;align-items:center;justify-content:space-between;padding:18px 28px;max-width:1180px;margin:0 auto;}
-  .logo{font-family:'Fraunces',serif;font-weight:700;font-size:1.7rem;color:var(--ink);display:flex;align-items:baseline;gap:10px;}
-  .logo span{font-family:'Rubik',sans-serif;background:var(--coral);color:var(--white);font-size:.62rem;font-weight:800;padding:3px 10px;border-radius:5px;letter-spacing:.1em;vertical-align:middle;}
-  .nav-links{display:flex;gap:32px;font-size:.95rem;font-weight:500;}
+  header{position:sticky;top:0;z-index:50;background:rgba(251,246,238,0.98);backdrop-filter:blur(10px);box-shadow:0 1px 0 var(--line), 0 8px 24px -16px rgba(42,33,24,0.25);border-bottom:2px solid var(--coral);}
+  nav{display:flex;align-items:center;justify-content:space-between;padding:16px 28px;max-width:1180px;margin:0 auto;}
+  .logo{font-family:'Fraunces',serif;font-weight:700;font-size:1.9rem;color:var(--ink);display:flex;align-items:baseline;gap:10px;}
+  .logo span{font-family:'Rubik',sans-serif;background:var(--coral);color:var(--white);font-size:.64rem;font-weight:800;padding:3px 10px;border-radius:5px;letter-spacing:.1em;vertical-align:middle;}
+  .nav-links{display:flex;gap:32px;font-size:.95rem;font-weight:600;}
   .nav-links a{position:relative;padding:4px 0;color:var(--ink-soft);transition:color .2s;}
   .nav-links a:hover{color:var(--coral);}
-  .nav-call{background:var(--coral);color:var(--white);font-weight:600;padding:11px 24px;border-radius:6px;font-size:.92rem;white-space:nowrap;display:inline-flex;align-items:center;gap:8px;transition:background .2s, transform .15s;}
-  .nav-call:hover{background:var(--coral-dark);transform:translateY(-1px);}
+  .nav-call{background:var(--coral);color:var(--white);font-weight:700;padding:13px 28px;border-radius:8px;font-size:.96rem;white-space:nowrap;display:inline-flex;align-items:center;gap:9px;box-shadow:0 8px 18px rgba(200,84,47,0.4);transition:background .2s, transform .15s, box-shadow .2s;}
+  .nav-call:hover{background:var(--coral-dark);transform:translateY(-1px);box-shadow:0 10px 22px rgba(200,84,47,0.48);}
 
   .hero{position:relative;padding:64px 0 50px;overflow:hidden;}
   .blob{position:absolute;border-radius:50%;z-index:0;opacity:.35;filter:blur(6px);}
@@ -230,7 +230,7 @@
   <div class="wrap">
     <div class="about-grid">
       <div class="about-photo">
-        <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=900&q=80" alt="שף מבשל במטבח ג'ורג'י">
+        <img src="https://images.unsplash.com/photo-1466637574441-749b8f19452f?auto=format&fit=crop&w=900&q=80" alt="מטבח אוכל רחוב של ג'ורג'י">
         <div class="about-tag">בלב מדרחוב הלל</div>
       </div>
       <div class="about-copy">
@@ -253,32 +253,32 @@
     <div class="section-head">
       <span class="section-eyebrow">מה שמבשלים אצלנו</span>
       <h2 style="margin-top:10px;">מהתפריט שלנו</h2>
-      <p>מבחר מהמנות האהובות ביותר, כפי שמופיע בכרטיס העסק בגוגל מפות. מחירים לעדכון.</p>
+      <p>מבחר מהמנות האהובות ביותר. טווח מחירים ממוצע למנה: ₪32–64.</p>
     </div>
     <div class="menu-grid">
       <div class="dish-card">
         <div class="dish-img"><img src="https://images.unsplash.com/photo-1432139509613-5c4255815697?auto=format&fit=crop&w=700&q=80" alt="אסאדו בקר"></div>
-        <div class="dish-body"><div class="dish-top"><h3>אסאדו</h3><span class="price">₪58</span></div><span>בשר בקר נימוח לאט, ברוטב ביתי עמוק וריחני</span></div>
+        <div class="dish-body"><h3>אסאדו</h3><span>בשר בקר נימוח לאט, ברוטב ביתי עמוק וריחני</span></div>
       </div>
       <div class="dish-card">
         <div class="dish-img"><img src="https://images.unsplash.com/photo-1554433607-66b5efe9d304?auto=format&fit=crop&w=700&q=80" alt="כריך קורנביף"></div>
-        <div class="dish-body"><div class="dish-top"><h3>כריך קורנביף</h3><span class="price">₪64</span></div><span>פרוסות קורנביף עסיסיות, חרדל וכרוב חמוץ בלחם טרי</span></div>
+        <div class="dish-body"><h3>כריך קורנביף</h3><span>פרוסות קורנביף עסיסיות, חרדל וכרוב חמוץ בלחם טרי</span></div>
       </div>
       <div class="dish-card">
-        <div class="dish-img"><img src="https://images.unsplash.com/photo-1612392062798-2dd9449b6943?auto=format&fit=crop&w=700&q=80" alt="נקניקייה ברזילאית"></div>
-        <div class="dish-body"><div class="dish-top"><h3>נקניקייה ברזילאית</h3><span class="price">₪32</span></div><span>בלחמנייה רכה עם רטבים ביתיים</span></div>
+        <div class="dish-img"><img src="https://images.unsplash.com/photo-1599599810769-bcde5a160d32?auto=format&fit=crop&w=700&q=80" alt="נקניקייה ברזילאית"></div>
+        <div class="dish-body"><h3>נקניקייה ברזילאית</h3><span>בלחמנייה רכה עם רטבים ביתיים</span></div>
       </div>
       <div class="dish-card">
         <div class="dish-img"><img src="https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=700&q=80" alt="קציצות סלמון"></div>
-        <div class="dish-body"><div class="dish-top"><h3>קציצות סלמון</h3><span class="price">₪60</span></div><span>קציצות סלמון פריכות עם רוטב ביתי וירקות טריים</span></div>
+        <div class="dish-body"><h3>קציצות סלמון</h3><span>קציצות סלמון פריכות עם רוטב ביתי וירקות טריים</span></div>
       </div>
       <div class="dish-card">
         <div class="dish-img"><img src="https://images.unsplash.com/photo-1559314809-0d155014e29e?auto=format&fit=crop&w=700&q=80" alt="פאד-תאי על אורז"></div>
-        <div class="dish-body"><div class="dish-top"><h3>מוקפץ פאד-תאי</h3><span class="price">לפי תפריט</span></div><span>קציצות עסיסיות, ירקות טריים וטעמים אסייתיים</span></div>
+        <div class="dish-body"><h3>מוקפץ פאד-תאי</h3><span>קציצות עסיסיות, ירקות טריים וטעמים אסייתיים</span></div>
       </div>
       <div class="dish-card">
         <div class="dish-img"><img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=700&q=80" alt="בירה וצ'יפס"></div>
-        <div class="dish-body"><div class="dish-top"><h3>בירה קרה + צ'יפס</h3><span class="price">לפי תפריט</span></div><span>הליווי המושלם לכל ארוחה</span></div>
+        <div class="dish-body"><h3>בירה קרה + צ'יפס</h3><span>הליווי המושלם לכל ארוחה</span></div>
       </div>
     </div>
     <div class="menu-note">התפריט המלא, המנות העונתיות והמחירים העדכניים ביותר זמינים בכרטיס העסק בגוגל מפות, בטלפון או במקום — רחוב הלל 8.</div>
@@ -350,7 +350,7 @@
   </div>
 </section>
 
-<section class="section" id="visit" style="background:#fff;">
+<section class="section" id="visit" style="background:var(--cream-2);padding-top:0;">
   <div class="wrap">
     <div class="section-head">
       <span class="section-eyebrow">בואו לבקר</span>
