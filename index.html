@@ -7,7 +7,7 @@
 <meta name="description" content="ג'ורג'י — מטבח רחוב גורמה בלב ירושלים. סנדוויצ'ים, מוקפצים ותבשילים טריים כל יום. רחוב הלל 8.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800;900&family=Frank+Ruhl+Libre:wght@500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800;900&family=Frank+Ruhl+Libre:wght@500;700&family=Fraunces:ital,wght@0,500;0,700;1,600&display=swap" rel="stylesheet">
 <style>
   :root{
     --cream:#FBF6EE;
@@ -25,20 +25,21 @@
   *{margin:0;padding:0;box-sizing:border-box;}
   html{scroll-behavior:smooth;}
   body{background:var(--cream);color:var(--ink);font-family:'Rubik',sans-serif;line-height:1.65;overflow-x:hidden;}
-  h1,h2,h3{font-family:'Frank Ruhl Libre','Rubik',serif;font-weight:700;letter-spacing:-0.01em;}
+  h1,h2,h3{font-family:'Fraunces','Frank Ruhl Libre','Rubik',serif;font-weight:700;letter-spacing:-0.01em;}
   a{color:inherit;text-decoration:none;}
   img{display:block;max-width:100%;}
   .wrap{max-width:1180px;margin:0 auto;padding:0 28px;}
   ::selection{background:var(--gold);color:var(--white);}
+  .ic{width:1em;height:1em;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0;vertical-align:-0.15em;}
 
   header{position:sticky;top:0;z-index:50;background:rgba(251,246,238,0.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);}
   nav{display:flex;align-items:center;justify-content:space-between;padding:18px 28px;max-width:1180px;margin:0 auto;}
-  .logo{font-family:'Frank Ruhl Libre',serif;font-weight:700;font-size:1.7rem;color:var(--ink);display:flex;align-items:baseline;gap:10px;}
+  .logo{font-family:'Fraunces',serif;font-weight:700;font-size:1.7rem;color:var(--ink);display:flex;align-items:baseline;gap:10px;}
   .logo span{font-family:'Rubik',sans-serif;background:var(--coral);color:var(--white);font-size:.62rem;font-weight:800;padding:3px 10px;border-radius:5px;letter-spacing:.1em;vertical-align:middle;}
   .nav-links{display:flex;gap:32px;font-size:.95rem;font-weight:500;}
   .nav-links a{position:relative;padding:4px 0;color:var(--ink-soft);transition:color .2s;}
   .nav-links a:hover{color:var(--coral);}
-  .nav-call{background:var(--coral);color:var(--white);font-weight:600;padding:11px 24px;border-radius:6px;font-size:.92rem;white-space:nowrap;transition:background .2s, transform .15s;}
+  .nav-call{background:var(--coral);color:var(--white);font-weight:600;padding:11px 24px;border-radius:6px;font-size:.92rem;white-space:nowrap;display:inline-flex;align-items:center;gap:8px;transition:background .2s, transform .15s;}
   .nav-call:hover{background:var(--coral-dark);transform:translateY(-1px);}
 
   .hero{position:relative;padding:64px 0 50px;overflow:hidden;}
@@ -49,7 +50,7 @@
   .hero-inner{max-width:1180px;margin:0 auto;padding:0 28px;display:grid;grid-template-columns:1.05fr 0.95fr;gap:52px;align-items:center;position:relative;z-index:2;}
   .eyebrow{display:inline-flex;align-items:center;gap:8px;background:var(--white);border:1px solid var(--line);color:var(--coral-dark);font-size:.82rem;font-weight:600;padding:8px 16px;border-radius:999px;margin-bottom:26px;box-shadow:0 2px 8px rgba(42,33,24,0.05);}
   .hero h1{font-size:clamp(2.5rem, 4.6vw, 3.9rem);line-height:1.14;color:var(--ink);margin-bottom:24px;}
-  .hero h1 .pop{color:var(--coral);position:relative;display:inline-block;}
+  .hero h1 .pop{color:var(--coral);position:relative;display:inline-block;font-style:italic;}
   .hero h1 .pop svg{position:absolute;left:0;bottom:-8px;width:100%;height:12px;}
   .hero p.lede{font-size:1.14rem;color:var(--ink-soft);max-width:480px;margin-bottom:34px;}
   .hero-cta{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:36px;}
@@ -66,8 +67,8 @@
   .hero-photo img{width:100%;height:440px;object-fit:cover;display:block;}
   .stamp{position:absolute;left:-20px;bottom:-24px;width:118px;height:118px;border-radius:50%;background:var(--herb);color:var(--white);display:flex;align-items:center;justify-content:center;text-align:center;box-shadow:0 14px 28px rgba(58,91,65,0.35);z-index:5;border:4px solid var(--cream);}
   .stamp .stamp-inner{font-size:.6rem;font-weight:700;letter-spacing:.06em;line-height:1.5;text-transform:uppercase;}
-  .stamp .stamp-big{font-family:'Frank Ruhl Libre',serif;font-size:1.35rem;font-weight:700;display:block;margin:2px 0;}
-  .sticker{position:absolute;top:-14px;right:20px;background:var(--gold);color:var(--white);padding:9px 18px;border-radius:999px;font-weight:700;font-size:.84rem;box-shadow:0 10px 20px rgba(201,154,59,0.35);}
+  .stamp .stamp-big{font-family:'Fraunces',serif;font-size:1.35rem;font-weight:700;display:block;margin:2px 0;}
+  .sticker{position:absolute;top:-14px;right:20px;background:var(--gold);color:var(--white);padding:9px 18px;border-radius:999px;font-weight:700;font-size:.84rem;box-shadow:0 10px 20px rgba(201,154,59,0.35);display:inline-flex;align-items:center;gap:7px;}
 
   .section{position:relative;z-index:1;padding:96px 0;}
   .section-head{max-width:640px;margin-bottom:52px;}
@@ -84,7 +85,7 @@
   .about-copy strong{color:var(--coral-dark);font-weight:700;}
   .about-stats{display:flex;gap:14px;margin-top:32px;flex-wrap:wrap;}
   .stat{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:18px 22px;flex:1;min-width:120px;}
-  .stat .num{font-family:'Frank Ruhl Libre',serif;font-size:2rem;color:var(--coral);font-weight:700;}
+  .stat .num{font-family:'Fraunces',serif;font-size:2rem;color:var(--coral);font-weight:700;}
   .stat .lab{color:var(--ink-soft);font-size:.82rem;font-weight:500;margin-top:2px;}
 
   .menu-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;}
@@ -94,19 +95,19 @@
   .dish-img img{width:100%;height:100%;object-fit:cover;transition:transform .5s;}
   .dish-card:hover .dish-img img{transform:scale(1.06);}
   .dish-body{padding:20px 22px 24px;}
-  .dish-body h3{font-size:1.1rem;color:var(--ink);margin-bottom:6px;font-weight:700;}
+  .dish-body .dish-top{display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin-bottom:6px;}
+  .dish-body h3{font-size:1.1rem;color:var(--ink);font-weight:700;}
+  .dish-body .price{color:var(--coral-dark);font-weight:800;font-size:1.02rem;white-space:nowrap;}
   .dish-body span{color:var(--ink-soft);font-size:.88rem;}
   .menu-note{margin-top:34px;text-align:center;color:var(--ink-soft);font-size:.95rem;background:var(--white);border:1px solid var(--line);padding:18px 24px;border-radius:14px;}
 
   .reviews-strip{background:var(--cream-2);}
   .review-rating-row{display:flex;align-items:center;gap:18px;margin-bottom:50px;flex-wrap:wrap;}
   .stars{color:var(--gold);font-size:1.3rem;letter-spacing:2px;}
-  .review-rating-row .big-num{font-family:'Frank Ruhl Libre',serif;font-size:2.6rem;font-weight:700;color:var(--ink);}
+  .review-rating-row .big-num{font-family:'Fraunces',serif;font-size:2.6rem;font-weight:700;color:var(--ink);}
   .review-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;}
   .ticket{position:relative;background:var(--white);color:var(--ink);border:1px solid var(--line);border-radius:16px;padding:28px;}
   .ticket-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:10px;}
-  .reviewer{display:flex;align-items:center;gap:12px;}
-  .avatar{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg, var(--coral), var(--gold));color:var(--white);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:1.05rem;flex-shrink:0;}
   .reviewer-name{font-weight:700;font-size:.98rem;}
   .reviewer-meta{font-size:.78rem;color:var(--ink-soft);}
   .ticket-stars{color:var(--gold);font-size:.95rem;letter-spacing:1px;}
@@ -122,21 +123,25 @@
   .hours-table tr{border-bottom:1px solid var(--line);}
   .hours-table tr:last-child{border-bottom:none;}
   .hours-table td{padding:13px 0;font-size:.98rem;}
-  .hours-table td:first-child{color:var(--ink);font-weight:700;width:40%;}
-  .hours-table td:last-child{color:var(--ink-soft);text-align:left;font-weight:600;}
+  .hours-table td:first-child{color:var(--ink);font-weight:700;width:34%;}
+  .hours-table td.time{color:var(--ink-soft);text-align:left;font-weight:600;}
   .closed{color:var(--coral-dark) !important;font-weight:700 !important;}
   .open-now-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(82,121,90,0.13);color:var(--herb-dark);padding:9px 18px;border-radius:999px;font-size:.85rem;font-weight:700;margin-top:18px;}
   .dot{width:8px;height:8px;border-radius:50%;background:var(--herb);display:inline-block;}
+  .price-range-row{display:flex;align-items:center;justify-content:space-between;margin-top:22px;padding-top:18px;border-top:1px solid var(--line);}
+  .price-range-row .lab{font-size:.85rem;color:var(--ink-soft);font-weight:600;}
+  .price-range-row .val{font-weight:800;color:var(--ink);}
 
   .contact-card{background:var(--ink);color:var(--cream);border-radius:16px;padding:34px;}
   .contact-row{display:flex;gap:16px;align-items:flex-start;padding:16px 0;border-bottom:1px solid rgba(251,246,238,0.12);}
   .contact-row:last-of-type{border-bottom:none;}
-  .icon-box{width:44px;height:44px;border-radius:10px;background:rgba(201,154,59,0.18);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1.2rem;}
+  .icon-box{width:44px;height:44px;border-radius:10px;background:rgba(201,154,59,0.18);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1.2rem;color:var(--gold);}
   .contact-row .label{font-size:.78rem;color:#cbb9a4;text-transform:uppercase;letter-spacing:.06em;margin-bottom:3px;}
   .contact-row .val{font-size:1.04rem;font-weight:700;color:var(--cream);}
   .contact-row .val a:hover{color:var(--gold);}
   .pay-methods{display:flex;flex-wrap:wrap;gap:9px;margin-top:16px;}
   .pay-chip{background:rgba(251,246,238,0.08);border:1px solid rgba(251,246,238,0.18);color:#e9dcca;font-size:.85rem;padding:8px 15px;border-radius:999px;font-weight:500;}
+  .pay-note{font-size:.78rem;color:#a5917b;margin-top:12px;}
   .map-frame{margin-top:34px;border-radius:16px;overflow:hidden;border:1px solid var(--line);height:280px;}
   .map-frame iframe{width:100%;height:100%;border:0;}
 
@@ -148,7 +153,7 @@
 
   footer{padding:60px 0 32px;}
   .foot-grid{display:flex;justify-content:space-between;flex-wrap:wrap;gap:30px;margin-bottom:36px;}
-  .foot-logo{font-family:'Frank Ruhl Libre',serif;font-size:1.5rem;font-weight:700;margin-bottom:10px;}
+  .foot-logo{font-family:'Fraunces',serif;font-size:1.5rem;font-weight:700;margin-bottom:10px;}
   .foot-col h4{font-size:.85rem;color:var(--ink-soft);text-transform:uppercase;letter-spacing:.08em;margin-bottom:14px;font-weight:700;}
   .foot-col a, .foot-col p{display:block;color:var(--ink-soft);font-size:.92rem;margin-bottom:9px;}
   .foot-col a:hover{color:var(--coral);}
@@ -185,7 +190,7 @@
       <a href="#reviews">ביקורות</a>
       <a href="#visit">שעות והגעה</a>
     </div>
-    <a class="nav-call" href="tel:+97226256333">📞 02-625-6333</a>
+    <a class="nav-call" href="tel:+97226256333"><svg class="ic" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.97.36 1.92.68 2.83a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.25-1.25a2 2 0 0 1 2.11-.45c.91.32 1.86.55 2.83.68A2 2 0 0 1 22 16.92Z"/></svg> 02-625-6333</a>
   </nav>
 </header>
 
@@ -194,23 +199,23 @@
   <div class="blob blob2"></div>
   <div class="hero-inner">
     <div>
-      <span class="eyebrow">⭐ 5.0 דירוג גוגל · רחוב הלל 8, ירושלים</span>
+      <span class="eyebrow"><svg class="ic" viewBox="0 0 24 24" stroke="none" fill="currentColor"><path d="M12 2l2.9 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l7.1-1.01z"/></svg> 4.7 דירוג גוגל · רחוב הלל 8, ירושלים</span>
       <h1>אוכל רחוב<br>שמרגיש <span class="pop">כמו בבית
         <svg viewBox="0 0 200 14" preserveAspectRatio="none"><path d="M2 10 Q 50 2, 100 8 T 198 6" fill="none" stroke="#C99A3B" stroke-width="5" stroke-linecap="round"/></svg>
       </span>.</h1>
       <p class="lede">סנדוויצ'ים גורמה, מוקפצים אסייתיים ותבשילים חמים — מבושלים טרי כל יום באמצע מדרחוב הלל. בלי יומרות, רק טעם.</p>
       <div class="hero-cta">
-        <a class="btn-primary" href="tel:+97226256333">📞 להזמנה טלפונית</a>
+        <a class="btn-primary" href="tel:+97226256333"><svg class="ic" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.97.36 1.92.68 2.83a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.25-1.25a2 2 0 0 1 2.11-.45c.91.32 1.86.55 2.83.68A2 2 0 0 1 22 16.92Z"/></svg> להזמנה טלפונית</a>
         <a class="btn-secondary" href="#menu">לתפריט המלא</a>
       </div>
       <div class="hero-meta">
-        <div>📍 <strong>רחוב הלל 8</strong>, ירושלים</div>
-        <div>🕑 <strong>א'–ה'</strong> · סגור בשישי-שבת</div>
-        <div>⭐ <strong>5.0</strong> · 433+ ביקורות</div>
+        <div><svg class="ic" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg> <strong>רחוב הלל 8</strong>, ירושלים</div>
+        <div><svg class="ic" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> <strong>א'–ה'</strong> · סגור בשישי-שבת</div>
+        <div><svg class="ic" viewBox="0 0 24 24" stroke="none" fill="currentColor"><path d="M12 2l2.9 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l7.1-1.01z"/></svg> <strong>4.7</strong> · 433+ ביקורות</div>
       </div>
     </div>
     <div class="hero-art">
-      <div class="sticker">טרי כל יום 🌿</div>
+      <div class="sticker"><svg class="ic" viewBox="0 0 24 24"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg> טרי כל יום</div>
       <div class="hero-photo"><img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=1100&q=80" alt="כריך גורמה טרי של ג'ורג'י"></div>
       <div class="stamp">
         <div class="stamp-inner">פתוח<span class="stamp-big">א'–ה'</span>סגור שישי-שבת</div>
@@ -231,10 +236,10 @@
       <div class="about-copy">
         <span class="section-eyebrow">הסיפור שלנו</span>
         <h2 style="margin-bottom:18px;margin-top:10px;">ג'ורג'י — פינת רחוב, מטבח עולמי</h2>
-        <p>ג'ורג'י הוא מקום קטן עם אופי גדול ברחוב הלל 8, ירושלים. השף ואשתו מבשלים כל יום מחדש — מסנדוויצ'ים עסיסיים ועד מוקפצי פאד-תאי ומרקים ביתיים, בלי קיצורי דרך ובלי תפריט שמתיימר להיות משהו שהוא לא.</p>
+        <p>ג'ורג'י הוא מקום קטן עם אופי גדול ברחוב הלל 8, ירושלים, שמגיש אוכל רחוב איכותי כבר שנים רבות. השף ואשתו מבשלים כל יום מחדש — מסנדוויצ'ים עסיסיים ועד מוקפצי פאד-תאי ומרקים ביתיים, בלי קיצורי דרך ובלי תפריט שמתיימר להיות משהו שהוא לא.</p>
         <p>הסגנון פה הוא <strong>מיזוג בין מטבח רחוב אסייתי לבין נשמה ישראלית</strong> — בשר נימוח, ירקות טריים מדי יום, ולחם איכותי שאופים בשבילו ביקורות שלמות. אורחים שחוזרים אומרים את זה הכי טוב: "מכריך הקורנביף ולתבשילים האסייתים — הכל תמיד טעים, טרי ומנחם."</p>
         <div class="about-stats">
-          <div class="stat"><div class="num">5.0</div><div class="lab">דירוג גוגל ממוצע</div></div>
+          <div class="stat"><div class="num">4.7</div><div class="lab">דירוג גוגל ממוצע</div></div>
           <div class="stat"><div class="num">433+</div><div class="lab">ביקורות לקוחות</div></div>
           <div class="stat"><div class="num">100%</div><div class="lab">מבושל טרי יומיומי</div></div>
         </div>
@@ -248,35 +253,35 @@
     <div class="section-head">
       <span class="section-eyebrow">מה שמבשלים אצלנו</span>
       <h2 style="margin-top:10px;">מהתפריט שלנו</h2>
-      <p>מבחר מהמנות האהובות ביותר על הלקוחות.</p>
+      <p>מבחר מהמנות האהובות ביותר, כפי שמופיע בכרטיס העסק בגוגל מפות. מחירים לעדכון.</p>
     </div>
     <div class="menu-grid">
       <div class="dish-card">
+        <div class="dish-img"><img src="https://images.unsplash.com/photo-1432139509613-5c4255815697?auto=format&fit=crop&w=700&q=80" alt="אסאדו בקר"></div>
+        <div class="dish-body"><div class="dish-top"><h3>אסאדו</h3><span class="price">₪58</span></div><span>בשר בקר נימוח לאט, ברוטב ביתי עמוק וריחני</span></div>
+      </div>
+      <div class="dish-card">
+        <div class="dish-img"><img src="https://images.unsplash.com/photo-1554433607-66b5efe9d304?auto=format&fit=crop&w=700&q=80" alt="כריך קורנביף"></div>
+        <div class="dish-body"><div class="dish-top"><h3>כריך קורנביף</h3><span class="price">₪64</span></div><span>פרוסות קורנביף עסיסיות, חרדל וכרוב חמוץ בלחם טרי</span></div>
+      </div>
+      <div class="dish-card">
+        <div class="dish-img"><img src="https://images.unsplash.com/photo-1612392062798-2dd9449b6943?auto=format&fit=crop&w=700&q=80" alt="נקניקייה ברזילאית"></div>
+        <div class="dish-body"><div class="dish-top"><h3>נקניקייה ברזילאית</h3><span class="price">₪32</span></div><span>בלחמנייה רכה עם רטבים ביתיים</span></div>
+      </div>
+      <div class="dish-card">
+        <div class="dish-img"><img src="https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=700&q=80" alt="קציצות סלמון"></div>
+        <div class="dish-body"><div class="dish-top"><h3>קציצות סלמון</h3><span class="price">₪60</span></div><span>קציצות סלמון פריכות עם רוטב ביתי וירקות טריים</span></div>
+      </div>
+      <div class="dish-card">
         <div class="dish-img"><img src="https://images.unsplash.com/photo-1559314809-0d155014e29e?auto=format&fit=crop&w=700&q=80" alt="פאד-תאי על אורז"></div>
-        <div class="dish-body"><h3>קציצות פאד-תאי על אורז</h3><span>קציצות עסיסיות, ירקות טריים וטעמים אסייתיים</span></div>
-      </div>
-      <div class="dish-card">
-        <div class="dish-img"><img src="https://images.unsplash.com/photo-1532550907401-a500c9a57435?auto=format&fit=crop&w=700&q=80" alt="עוף עם קוסקוס"></div>
-        <div class="dish-body"><h3>עוף עם קוסקוס</h3><span>חזה עוף עסיסי על מצע קוסקוס ביתי וירקות צבעוניים</span></div>
-      </div>
-      <div class="dish-card">
-        <div class="dish-img"><img src="https://images.unsplash.com/photo-1554433607-66b5efe9d304?auto=format&fit=crop&w=700&q=80" alt="כריך גורמה"></div>
-        <div class="dish-body"><h3>כריך גורמה</h3><span>בלחם טרי עם רטבים ביתיים וירקות פריכים</span></div>
-      </div>
-      <div class="dish-card">
-        <div class="dish-img"><img src="https://images.unsplash.com/photo-1612392062798-2dd9449b6943?auto=format&fit=crop&w=700&q=80" alt="נקניקיית גורמה"></div>
-        <div class="dish-body"><h3>נקניקיית גורמה</h3><span>בלחמנייה רכה עם רטבים ביתיים</span></div>
-      </div>
-      <div class="dish-card">
-        <div class="dish-img"><img src="https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?auto=format&fit=crop&w=700&q=80" alt="כריך בשר נמוך"></div>
-        <div class="dish-body"><h3>כריך בשר נמוך</h3><span>בשר נמוך לאט, רטבים וקולסלו</span></div>
+        <div class="dish-body"><div class="dish-top"><h3>מוקפץ פאד-תאי</h3><span class="price">לפי תפריט</span></div><span>קציצות עסיסיות, ירקות טריים וטעמים אסייתיים</span></div>
       </div>
       <div class="dish-card">
         <div class="dish-img"><img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=700&q=80" alt="בירה וצ'יפס"></div>
-        <div class="dish-body"><h3>בירה קרה + צ'יפס</h3><span>הליווי המושלם לכל ארוחה</span></div>
+        <div class="dish-body"><div class="dish-top"><h3>בירה קרה + צ'יפס</h3><span class="price">לפי תפריט</span></div><span>הליווי המושלם לכל ארוחה</span></div>
       </div>
     </div>
-    <div class="menu-note">📋 התפריט המלא, המחירים העדכניים והמנות העונתיות זמינים בטלפון או במקום — רחוב הלל 8.</div>
+    <div class="menu-note">התפריט המלא, המנות העונתיות והמחירים העדכניים ביותר זמינים בכרטיס העסק בגוגל מפות, בטלפון או במקום — רחוב הלל 8.</div>
   </div>
 </section>
 
@@ -287,7 +292,7 @@
       <h2 style="margin-top:10px;">ביקורות אמיתיות מגוגל</h2>
     </div>
     <div class="review-rating-row">
-      <div class="big-num">5.0</div>
+      <div class="big-num">4.7</div>
       <div>
         <div class="stars">★★★★★</div>
         <div style="color:var(--ink-soft);font-size:.88rem;">מבוסס על ביקורות גוגל מאומתות</div>
@@ -298,8 +303,7 @@
       <div class="ticket">
         <div class="ticket-top">
           <div class="reviewer">
-            <div class="avatar">T</div>
-            <div><div class="reviewer-name">Tom Stolz</div><div class="reviewer-meta">9 ביקורות</div></div>
+            <div class="reviewer-name">Tom Stolz</div><div class="reviewer-meta">9 ביקורות</div>
           </div>
           <div class="ticket-stars">★★★★★</div>
         </div>
@@ -310,33 +314,30 @@
       <div class="ticket">
         <div class="ticket-top">
           <div class="reviewer">
-            <div class="avatar">E</div>
-            <div><div class="reviewer-name">Elad Israel</div><div class="reviewer-meta">ממליץ מקומי · 23 ביקורות</div></div>
+            <div class="reviewer-name">Elad Israel</div><div class="reviewer-meta">ממליץ מקומי · 23 ביקורות</div>
           </div>
           <div class="ticket-stars">★★★★★</div>
         </div>
-        <div class="ticket-body">"מעולה! יש אפילו מרק תימני! ראאפר הבית ואשתו חמודים ממש, מדהים איך שירות עם חיוך ואווירה נעימה עושים את כל ההבדל. מחירים סבבה לגמרי. מקווה שיישאר ככה 🙂..."</div>
+        <div class="ticket-body">"מעולה! יש אפילו מרק תימני! ראאפר הבית ואשתו חמודים ממש, מדהים איך שירות עם חיוך ואווירה נעימה עושים את כל ההבדל. מחירים סבבה לגמרי. מקווה שיישאר ככה..."</div>
         <div class="ticket-when"><span>אכילה במקום · ארוחת צהריים</span><span>לפני חודשיים</span></div>
       </div>
 
       <div class="ticket">
         <div class="ticket-top">
           <div class="reviewer">
-            <div class="avatar">M</div>
-            <div><div class="reviewer-name">Melissa Zohar</div><div class="reviewer-meta">3 ביקורות</div></div>
+            <div class="reviewer-name">Melissa Zohar</div><div class="reviewer-meta">3 ביקורות</div>
           </div>
           <div class="ticket-stars">★★★★★</div>
         </div>
         <div class="ticket-body">"תמיד תענוג לחזור לג'ורג'י! מכריך הקורנביף, לתבשילים האסייתים - הכל תמיד טעים, טרי ומנחם. המקום עם אופי והשירות תמיד מקצועי, חם ואדיב. ממליצה בחום על..."</div>
-        <div class="owner-reply"><b>תגובת ג'ורג'י (בעלים):</b> תודה רבה מליסה!! אוהבים המון 🧡</div>
+        <div class="owner-reply"><b>תגובת ג'ורג'י (בעלים):</b> תודה רבה מליסה!! אוהבים המון.</div>
         <div class="ticket-when"><span>&nbsp;</span><span>לפני 6 חודשים</span></div>
       </div>
 
       <div class="ticket">
         <div class="ticket-top">
           <div class="reviewer">
-            <div class="avatar">מ</div>
-            <div><div class="reviewer-name">מתן זמיר</div><div class="reviewer-meta">4 ביקורות</div></div>
+            <div class="reviewer-name">מתן זמיר</div><div class="reviewer-meta">4 ביקורות</div>
           </div>
           <div class="ticket-stars">★★★★★</div>
         </div>
@@ -359,37 +360,37 @@
       <div>
         <div class="hours-card">
           <table class="hours-table">
-            <tr><td>ראשון</td><td>פתוח</td></tr>
-            <tr><td>שני</td><td>פתוח</td></tr>
-            <tr><td>שלישי</td><td>פתוח</td></tr>
-            <tr><td>רביעי</td><td>פתוח</td></tr>
-            <tr><td>חמישי</td><td>פתוח</td></tr>
-            <tr><td>שישי</td><td class="closed">סגור — שבת שלום</td></tr>
-            <tr><td>שבת</td><td class="closed">סגור — שבת שלום</td></tr>
+            <tr><td>ראשון</td><td class="time">צהריים – ערב</td></tr>
+            <tr><td>שני</td><td class="time">צהריים – ערב</td></tr>
+            <tr><td>שלישי</td><td class="time">צהריים – ערב</td></tr>
+            <tr><td>רביעי</td><td class="time">צהריים – ערב</td></tr>
+            <tr><td>חמישי</td><td class="time">צהריים – ערב</td></tr>
+            <tr><td>שישי</td><td class="time closed">סגור — שבת שלום</td></tr>
+            <tr><td>שבת</td><td class="time closed">סגור — שבת שלום</td></tr>
           </table>
-          <div class="open-now-badge"><span class="dot"></span> פתוחים ראשון עד חמישי</div>
+          <div class="open-now-badge"><span class="dot"></span> פתוחים ראשון עד חמישי, ארוחות צהריים וערב</div>
+          <div class="price-range-row"><span class="lab">טווח מחירים ממוצע למנה</span><span class="val">₪32–64 · ₪₪</span></div>
         </div>
-        <p style="margin-top:18px;color:var(--ink-soft);font-size:.88rem;">* שעות פתיחה מדויקות (בוקר/ערב) משתנות בהתאם לעונה — מומלץ להתקשר ולוודא לפני הגעה.</p>
+        <p style="margin-top:18px;color:var(--ink-soft);font-size:.88rem;">* שעות הפתיחה המדויקות (תחילת צהריים ושעת סגירה בערב) משתנות בהתאם לעונה — מומלץ להתקשר ולוודא לפני הגעה.</p>
       </div>
       <div class="contact-card">
         <div class="contact-row">
-          <div class="icon-box">📍</div>
+          <div class="icon-box"><svg class="ic" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg></div>
           <div><div class="label">כתובת</div><div class="val">רחוב הלל 8, ירושלים</div></div>
         </div>
         <div class="contact-row">
-          <div class="icon-box">📞</div>
+          <div class="icon-box"><svg class="ic" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.97.36 1.92.68 2.83a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.25-1.25a2 2 0 0 1 2.11-.45c.91.32 1.86.55 2.83.68A2 2 0 0 1 22 16.92Z"/></svg></div>
           <div><div class="label">טלפון</div><div class="val"><a href="tel:+97226256333">02-625-6333</a></div></div>
         </div>
         <div class="contact-row">
-          <div class="icon-box">💳</div>
+          <div class="icon-box"><svg class="ic" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg></div>
           <div>
             <div class="label">אמצעי תשלום</div>
             <div class="pay-methods">
               <span class="pay-chip">מזומן</span>
-              <span class="pay-chip">ויזה / מאסטרקארד</span>
-              <span class="pay-chip">Bit</span>
-              <span class="pay-chip">Apple Pay</span>
+              <span class="pay-chip">כרטיסי אשראי</span>
             </div>
+            <div class="pay-note">לבדיקת תמיכה ב-Bit / Apple Pay מומלץ לוודא טלפונית לפני ההזמנה.</div>
           </div>
         </div>
       </div>
@@ -403,7 +404,7 @@
 <div class="cta-strip">
   <h2>רעבים? אנחנו פה.</h2>
   <p>תתקשרו, תזמינו ותבואו לטעום — רחוב הלל 8, ירושלים.</p>
-  <a class="btn-primary" href="tel:+97226256333">📞 02-625-6333</a>
+  <a class="btn-primary" href="tel:+97226256333"><svg class="ic" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.97.36 1.92.68 2.83a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.25-1.25a2 2 0 0 1 2.11-.45c.91.32 1.86.55 2.83.68A2 2 0 0 1 22 16.92Z"/></svg> 02-625-6333</a>
 </div>
 
 <footer>
